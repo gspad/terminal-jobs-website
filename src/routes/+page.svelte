@@ -3,7 +3,7 @@
 
 	let initialCommand = 'npx terminaljobs --help';
 	let initialCommand2 =
-		'npx terminaljobs --level=senior title=devops --tech=aws,kubernetes,terraform --remote=true';
+		'npx terminaljobs --level=senior title=devops --tech=aws,kubernetes,terraform';
 	let command = 'npx terminaljobs --location=remote';
 	let command2 = 'npx terminaljobs --help';
 	let command3 = 'npx terminaljobs --lang=typescript --location=on-site';
@@ -58,12 +58,12 @@
 		</div>
 
 		<div class="wrapper space-y-16">
-			<div class="text-4xl">no nonsense. try us out:</div>
+			<div class="text-4xl">no nonsense. try it out:</div>
 
 			<div class="flex h-full space-x-9">
 				<div class="flex-1 flex flex-col space-y-10">
 					<div
-						class="bg-transparent text-white p-4 rounded-md flex items-center space-x-4 border border-white animate-glow h-20 button"
+						class="bg-transparent text-white p-4 rounded-md flex items-center space-x-4 border border-white animate-glow animation-delay-1 h-20 button"
 					>
 						<span class="flex-grow select-all">{'$ ' + command}</span>
 						<button
@@ -75,7 +75,7 @@
 					</div>
 
 					<div
-						class="bg-transparent text-white p-4 rounded-md flex items-center space-x-4 border border-white animate-glow h-20 button"
+						class="bg-transparent text-white p-4 rounded-md flex items-center space-x-4 border border-white animate-glow animation-delay-3 h-20 button"
 					>
 						<span class="flex-grow select-all">{'$ ' + command2}</span>
 						<button
@@ -89,7 +89,7 @@
 
 				<div class="flex-1 flex flex-col space-y-10">
 					<div
-						class="bg-transparent text-white p-4 rounded-md flex items-center space-x-4 border border-white animate-glow h-20 button"
+						class="bg-transparent text-white p-4 rounded-md flex items-center space-x-4 border border-white animate-glow animation-delay-4 h-20 button"
 					>
 						<span class="flex-grow select-all">{'$ ' + command3}</span>
 						<button
@@ -101,7 +101,7 @@
 					</div>
 
 					<div
-						class="bg-transparent text text-white p-4 rounded-md flex items-center space-x-4 border border-white animate-glow h-20 button"
+						class="bg-transparent text text-white p-4 rounded-md flex items-center space-x-4 border border-white animate-glow animation-delay-2 h-20 button"
 					>
 						<span class="flex-grow select-all">{'$ ' + command4}</span>
 						<button

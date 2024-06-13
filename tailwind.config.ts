@@ -15,13 +15,15 @@ export default {
 					'50%': { boxShadow: '0 0 4px #00ffea, 0 0 10px #00ffea' },
 					'100%': { boxShadow: '0 0 2px #00ffea' },
 				},
-				'border-spin': {
-					'100%': { transform: 'rotate(-360deg)' },
-				}
 			},
 			animation: {
 				glow: 'glow 2s ease-in-out infinite',
-				'border-spin': 'border-spin 7s linear infinite',
+			},
+			animationDelay: {
+				'1': '1s',
+				'2': '2s',
+				'3': '3s',
+				'4': '4s',
 			},
 		},
 	},
