@@ -24,7 +24,7 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<img src="/arrow.png" alt="Logo" class="h-14" />
+				<img src="/black-and-white-logo.png" alt="Logo" class="h-14" />
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
