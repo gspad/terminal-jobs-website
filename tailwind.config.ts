@@ -11,9 +11,9 @@ export default {
 		extend: {
 			keyframes: {
 				glow: {
-					'0%': { boxShadow: '0 0 2px #00ffea' },
-					'50%': { boxShadow: '0 0 4px #00ffea, 0 0 10px #00ffea' },
-					'100%': { boxShadow: '0 0 2px #00ffea' },
+					'0%': { boxShadow: '0 0 2px #808080' },
+					'50%': { boxShadow: '0 0 4px #808080, 0 0 10px #808080' },
+					'100%': { boxShadow: '0 0 2px #808080' },
 				},
 			},
 			animation: {
