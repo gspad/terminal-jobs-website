@@ -45,8 +45,8 @@
 </script>
 
 <div class="container h-full mx-auto flex justify-center items-center">
-	<div class="lg:space-y-36 items-center text-center">
-		<div class="text-9xl lg:text-6xl text-white">opportunities for top engineers.</div>
+	<div class="space-y-36 items-center text-center">
+		<div class="text-8xl lg:text-6xl text-white">opportunities for top engineers.</div>
 
 		<div class="typewriters space-y-10 pl-5 lg:pl-0 text-center justify-left lg:justify-center">
 			<div class="typewriter text-2xl text-gray-300">
