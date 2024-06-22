@@ -92,7 +92,7 @@
 	.caret {
 		position: absolute;
 		animation: blink 1s infinite;
-		color: orange;
+		color: cyan;
 	}
 
 	.text-left {
