@@ -3,7 +3,7 @@
 
 	let initialCommand = 'npx terminaljobs --help';
 	let initialCommand2 = 'npx terminaljobs --level=senior';
-	let initialCommand3 = 'npx terminaljobs --level=senior title=platform';
+	let initialCommand3 = 'npx terminaljobs --level=senior title=devops';
 
 	let displayedCommand = '$ ';
 	let displayedCommand2 = '$ ';
@@ -46,32 +46,32 @@
 
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-20 lg:space-y-36 items-center text-center">
-		<div class="text-8xl lg:text-6xl text-white">opportunities for top engineers.</div>
+		<div class="text-4xl lg:text-6xl text-white">opportunities for top engineers.</div>
 
-		<div class="typewriters space-y-10 pl-5 lg:pl-0 text-center justify-left lg:juistify-center">
-			<div class="typewriter centered text-4xl lg:text-2xl text-gray-300">
-				<span class="inline-block text-left w-full">{displayedCommand}</span>
+		<div class="typewriters space-y-10 pl-5 lg:pl-0 text-center justify-left lg:justify-center">
+			<div class="typewriter centered text-2xl lg:text-2xl text-gray-300">
+				<span class="text-left">{displayedCommand}<span class="caret">|</span></span>
 			</div>
-			<div class="typewriter text-4xl lg:text-2xl text-gray-300 whitespace-normal">
-				<span class="inline-block text-left w-full">{displayedCommand2}</span>
+			<div class="typewriter text-1xl lg:text-2xl text-gray-300">
+				<span class="text-left">{displayedCommand2}<span class="caret">|</span></span>
 			</div>
-			<div class="typewriter text-4xl lg:text-2xl text-gray-300 whitespace-normal hidden lg:block">
-				<span class="inline-block text-left w-full">{displayedCommand3}</span>
+			<div class="typewriter text-1xl lg:text-2xl text-gray-300 hidden lg:block">
+				<span class="text-left">{displayedCommand3}<span class="caret">|</span></span>
 			</div>
 		</div>
 	</div>
 </div>
 
 <style lang="postcss">
-	@keyframes gradient-border {
+	@keyframes blink {
 		0% {
-			background-position: 0% 50%;
+			opacity: 1;
 		}
 		50% {
-			background-position: 100% 50%;
+			opacity: 0;
 		}
 		100% {
-			background-position: 0% 50%;
+			opacity: 1;
 		}
 	}
 
@@ -99,9 +99,21 @@
 	.typewriter {
 		font-family: monospace;
 		overflow: hidden;
-		border-right: 0.15em solid orange;
 		margin-left: 0;
 		margin-right: auto;
 		letter-spacing: 0.15em;
+		white-space: nowrap;
+	}
+
+	.caret {
+		display: inline;
+		animation: blink 1s infinite;
+		font-size: 2rem;
+		color: orange;
+	}
+
+	.text-left {
+		display: inline-flex;
+		align-items: baseline;
 	}
 </style>
