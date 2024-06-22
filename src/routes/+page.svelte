@@ -31,14 +31,14 @@
 </script>
 
 <div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-36 items-center text-center">
-		<div class="text-6xl text-white">opportunities for top engineers.</div>
+	<div class="space-y-20 lg:space-y-36 items-center text-center">
+		<div class="text-2xl lg:text-6xl text-white">opportunities for top engineers.</div>
 
-		<div class="typewriters space-y-10 text-center">
-			<div class="typewriter first-command centered text-2xl text-gray-300">
+		<div class="typewriters space-y-10 pl-5 lg:pl-0 text-center justify-left lg:juistify-center">
+			<div class="typewriter first-command centered text-md lg:text-2xl text-gray-300">
 				<span class="inline-block text-left w-full">{displayedCommand}</span>
 			</div>
-			<div class="typewriter second-command text-2xl text-gray-300">
+			<div class="typewriter second-command text-1xl lg:text-2xl text-gray-300 whitespace-normal">
 				<span class="inline-block text-left w-full">{displayedCommand2}</span>
 			</div>
 		</div>
@@ -82,22 +82,17 @@
 	.typewriter {
 		font-family: monospace;
 		overflow: hidden;
-		/* Ensures the content is not revealed until the animation */
 		border-right: 0.15em solid orange;
-		/* The typwriter cursor */
-		white-space: nowrap;
-		/* Keeps the content on a single line */
 		margin-left: 0;
 		margin-right: auto;
-		/* Gives that scrolling effect as the typing happens */
 		letter-spacing: 0.15em;
 	}
 
-	.first-command {
+	/* .first-command {
 		margin-left: 25%;
 	}
 
 	.second-command {
 		margin-left: 3%;
-	}
+	} */
 </style>

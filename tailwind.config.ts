@@ -25,6 +25,10 @@ export default {
 				'3': '3s',
 				'4': '4s',
 			},
+			fontSize: {
+				'body-lg': '1rem',
+				'body': '.875rem',
+			},
 		},
 	},
 	plugins: [
