@@ -55,7 +55,7 @@
 			<div class="typewriter text-1xl lg:text-2xl text-gray-300">
 				<span class="text-left">{displayedCommand2}<span class="caret">|</span></span>
 			</div>
-			<div class="typewriter text-1xl lg:text-2xl text-gray-300 hidden lg:block">
+			<div class="typewriter text-1xl lg:text-2xl text-gray-300">
 				<span class="text-left">{displayedCommand3}<span class="caret">|</span></span>
 			</div>
 		</div>
