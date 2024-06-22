@@ -31,7 +31,7 @@
 	onMount(typeWriter1);
 </script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
+<div class="container h-full mx-auto flex justify-center mt-80">
 	<div class="space-y-36 items-center text-center">
 		<div class="text-4xl lg:text-6xl text-white">opportunities for top engineers.</div>
 
