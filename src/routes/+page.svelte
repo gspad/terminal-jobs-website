@@ -49,13 +49,13 @@
 		<div class="text-8xl lg:text-6xl text-white">opportunities for top engineers.</div>
 
 		<div class="typewriters space-y-10 pl-5 lg:pl-0 text-center justify-left lg:justify-center">
-			<div class="typewriter text-3xl lg:text-2xl text-gray-300">
+			<div class="typewriter text-3xl lg:text-2xl text-gray-300 max-w-full">
 				<span class="text-left">{displayedCommand}<span class="caret">|</span></span>
 			</div>
-			<div class="typewriter text-3xl lg:text-2xl text-gray-300">
+			<div class="typewriter text-3xl lg:text-2xl text-gray-300 max-w-full">
 				<span class="text-left">{displayedCommand2}<span class="caret">|</span></span>
 			</div>
-			<div class="typewriter text-3xl lg:text-2xl text-gray-300">
+			<div class="typewriter text-3xl lg:text-2xl text-gray-300 overflow-wrap last-typewriter">
 				<span class="text-left">{displayedCommand3}<span class="caret">|</span></span>
 			</div>
 		</div>
@@ -98,11 +98,16 @@
 
 	.typewriter {
 		font-family: monospace;
-		overflow: hidden;
 		margin-left: 0;
 		margin-right: auto;
 		letter-spacing: 0.15em;
 		white-space: nowrap;
+	}
+
+	.last-typewriter {
+		white-space: normal;
+		word-wrap: break-word;
+		max-width: 100%;
 	}
 
 	.caret {
