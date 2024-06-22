@@ -46,16 +46,16 @@
 
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-20 lg:space-y-36 items-center text-center">
-		<div class="text-5xl lg:text-6xl text-white">opportunities for top engineers.</div>
+		<div class="text-8xl lg:text-6xl text-white">opportunities for top engineers.</div>
 
 		<div class="typewriters space-y-10 pl-5 lg:pl-0 text-center justify-left lg:juistify-center">
-			<div class="typewriter centered text-2xl text-gray-300">
+			<div class="typewriter centered text-4xl lg:text-2xl text-gray-300">
 				<span class="inline-block text-left w-full">{displayedCommand}</span>
 			</div>
-			<div class="typewriter text-2xl text-gray-300 whitespace-normal">
+			<div class="typewriter text-4xl lg:text-2xl text-gray-300 whitespace-normal">
 				<span class="inline-block text-left w-full">{displayedCommand2}</span>
 			</div>
-			<div class="typewriter text-2xl text-gray-300 whitespace-normal hidden lg:block">
+			<div class="typewriter text-4xl lg:text-2xl text-gray-300 whitespace-normal hidden lg:block">
 				<span class="inline-block text-left w-full">{displayedCommand3}</span>
 			</div>
 		</div>
