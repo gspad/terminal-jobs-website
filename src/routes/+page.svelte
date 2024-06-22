@@ -2,28 +2,42 @@
 	import { onMount } from 'svelte';
 
 	let initialCommand = 'npx terminaljobs --help';
-	let initialCommand2 = 'npx terminaljobs --level=senior title=devops';
+	let initialCommand2 = 'npx terminaljobs --level=senior';
+	let initialCommand3 = 'npx terminaljobs --level=senior title=platform';
 
 	let displayedCommand = '$ ';
 	let displayedCommand2 = '$ ';
-	let i = 0;
+	let displayedCommand3 = '$ ';
+
+	let i1 = 0;
+	let i2 = 0;
+	let i3 = 0;
 
 	const typeWriter1 = () => {
-		if (i < initialCommand.length) {
-			displayedCommand += initialCommand.charAt(i);
-			i++;
+		if (i1 < initialCommand.length) {
+			displayedCommand += initialCommand.charAt(i1);
+			i1++;
 			setTimeout(typeWriter1, 30);
 		} else {
-			i = 0;
 			typeWriter2();
 		}
 	};
 
 	const typeWriter2 = () => {
-		if (i < initialCommand2.length) {
-			displayedCommand2 += initialCommand2.charAt(i);
-			i++;
+		if (i2 < initialCommand2.length) {
+			displayedCommand2 += initialCommand2.charAt(i2);
+			i2++;
 			setTimeout(typeWriter2, 30);
+		} else {
+			typeWriter3();
+		}
+	};
+
+	const typeWriter3 = () => {
+		if (i3 < initialCommand3.length) {
+			displayedCommand3 += initialCommand3.charAt(i3);
+			i3++;
+			setTimeout(typeWriter3, 30);
 		}
 	};
 
@@ -32,14 +46,17 @@
 
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-20 lg:space-y-36 items-center text-center">
-		<div class="text-6xl text-white">opportunities for top engineers.</div>
+		<div class="text-5xl lg:text-6xl text-white">opportunities for top engineers.</div>
 
 		<div class="typewriters space-y-10 pl-5 lg:pl-0 text-center justify-left lg:juistify-center">
-			<div class="typewriter first-command centered text-2xl text-gray-300">
+			<div class="typewriter centered text-2xl text-gray-300">
 				<span class="inline-block text-left w-full">{displayedCommand}</span>
 			</div>
-			<div class="typewriter second-command text-2xl text-gray-300 whitespace-normal">
+			<div class="typewriter text-2xl text-gray-300 whitespace-normal">
 				<span class="inline-block text-left w-full">{displayedCommand2}</span>
+			</div>
+			<div class="typewriter text-2xl text-gray-300 whitespace-normal hidden lg:block">
+				<span class="inline-block text-left w-full">{displayedCommand3}</span>
 			</div>
 		</div>
 	</div>
@@ -87,12 +104,4 @@
 		margin-right: auto;
 		letter-spacing: 0.15em;
 	}
-
-	/* .first-command {
-		margin-left: 25%;
-	}
-
-	.second-command {
-		margin-left: 3%;
-	} */
 </style>
