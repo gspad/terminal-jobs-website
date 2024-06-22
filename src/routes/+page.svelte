@@ -2,12 +2,10 @@
 	import { onMount } from 'svelte';
 
 	let initialCommand = 'npx terminaljobs --help';
-	let initialCommand2 = 'npx terminaljobs --level=senior';
-	let initialCommand3 = 'npx terminaljobs --level=senior title=devops';
+	let initialCommand2 = 'npx terminaljobs --level=senior --lang=python';
 
 	let displayedCommand = '$ ';
 	let displayedCommand2 = '$ ';
-	let displayedCommand3 = '$ ';
 
 	let i1 = 0;
 	let i2 = 0;
@@ -28,16 +26,6 @@
 			displayedCommand2 += initialCommand2.charAt(i2);
 			i2++;
 			setTimeout(typeWriter2, 30);
-		} else {
-			typeWriter3();
-		}
-	};
-
-	const typeWriter3 = () => {
-		if (i3 < initialCommand3.length) {
-			displayedCommand3 += initialCommand3.charAt(i3);
-			i3++;
-			setTimeout(typeWriter3, 30);
 		}
 	};
 
@@ -54,9 +42,6 @@
 			</div>
 			<div class="typewriter text-3xl lg:text-2xl text-gray-300 max-w-full">
 				<span class="text-left">{displayedCommand2}<span class="caret">|</span></span>
-			</div>
-			<div class="typewriter text-3xl lg:text-2xl text-gray-300 overflow-wrap last-typewriter">
-				<span class="text-left">{displayedCommand3}<span class="caret">|</span></span>
 			</div>
 		</div>
 	</div>
