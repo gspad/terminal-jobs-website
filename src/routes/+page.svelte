@@ -4,7 +4,7 @@
 	let initialCommand = 'npx terminaljobs --help';
 	let initialCommand2 = 'npx terminaljobs --level=senior --lang=python';
 
-	let displayedCommand = '$';
+	let displayedCommand = '$ ';
 	let displayedCommand2 = '$ ';
 
 	let i1 = 0;
@@ -32,20 +32,17 @@
 </script>
 
 <div class="container h-full mx-auto flex justify-center mt-20 lg:mt-80">
-	<div class="space-y-32 lg:space-y-36 items-center text-center">
-		<div class="text-4xl lg:text-6xl text-white">opportunities for top engineers.</div>
+	<div class="space-y-20 lg:space-y-36 items-center text-center">
+		<div class="text-6xl text-white">opportunities for top engineers.</div>
 
 		<div class="typewriters space-y-10 pl-5 lg:pl-0 text-center justify-left lg:justify-center">
-			<div class="typewriter-container text-1xl text-left lg:text-2xl text-gray-300 max-w-full">
+			<div class="typewriter-container text-2xl text-left lg:text-2xl text-gray-300 max-w-full">
 				<span class="typewriter"><span>{displayedCommand}</span><span class="caret">|</span></span>
 			</div>
 			<div
-				class="typewriter-container text-left text-1xl lg:text-2xl text-gray-300 max-w-full last-typewriter"
+				class="typewriter-container text-left text-2xl lg:text-2xl text-gray-300 max-w-full last-typewriter"
 			>
-				<span class="typewriter">
-					<span>{displayedCommand2}</span>
-					<span class="caret">|</span>
-				</span>
+				<span class="typewriter"><span>{displayedCommand2}</span><span class="caret">|</span></span>
 			</div>
 		</div>
 	</div>
