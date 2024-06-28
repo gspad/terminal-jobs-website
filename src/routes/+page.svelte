@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	let initialCommand = 'npx terminaljobs --help';
+	let initialCommand = 'coming soon';
 	let initialCommand2 = 'npx terminaljobs --level=senior --lang=python';
 
 	let displayedCommand = '$ ';
@@ -31,59 +31,34 @@
 	onMount(typeWriter1);
 </script>
 
-<div class="container h-full mx-auto flex justify-center mt-20 lg:mt-80">
-	<div class="space-y-20 lg:space-y-36 items-center text-center">
-		<div class="text-5xl text-white">opportunities for top engineers.</div>
+<div class="container flex justify-center h-full mx-auto lg:mt-40">
+    <div class="space-y-20 lg:space-y-48 items-center text-center">
+        <div class="text-5xl lg:text-6xl text-white">opportunities for top engineers.</div>
 
-		<div class="typewriters space-y-10 pl-5 lg:pl-0 text-center justify-left lg:justify-center">
-			<div class="typewriter-container text-2xl text-left lg:text-2xl text-gray-300 max-w-full">
-				<span class="typewriter"><span>{displayedCommand}</span><span class="caret">|</span></span>
-			</div>
-			<div
-				class="typewriter-container text-left text-2xl lg:text-2xl text-gray-300 max-w-full last-typewriter"
-			>
-				<span class="typewriter"><span>{displayedCommand2}</span><span class="caret">|</span></span>
-			</div>
+        <div class="typewriters space-y-10 pl-5 lg:pl-0">
+            <div class="typewriter-container font-mono text-2xl text-gray-300 flex justify-center">
+                <div class="typewriter text-left w-84 block">
+                    {displayedCommand}
+					<span class="caret">|</span>
+				</div>
+            </div>
+        </div>
+
+		<div class="wrapper space-y-20 lg:space-y-10 mt-44">
+        	<div class="text-3xl text-white">Want to find the best talent? Contact us:</div>
+        	<div class="text-2xl">hire@comingsoon.com</div>
 		</div>
-	</div>
+    </div>
 </div>
 
-<style lang="postcss">
+<style>
 	@keyframes blink {
-		0% {
+		0%, 100% {
 			opacity: 1;
 		}
 		50% {
 			opacity: 0;
 		}
-		100% {
-			opacity: 1;
-		}
-	}
-
-	.typewriters {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.typewriter-container {
-		position: relative;
-		display: inline-block;
-		font-family: monospace;
-		margin-left: 0;
-		margin-right: auto;
-		letter-spacing: 0.15em;
-		white-space: pre-wrap;
-	}
-
-	.last-typewriter {
-		white-space: normal;
-		word-wrap: break-word;
-	}
-
-	.typewriter {
-		display: inline;
 	}
 
 	.caret {
@@ -92,8 +67,7 @@
 		color: cyan;
 	}
 
-	.text-left {
-		display: inline-flex;
-		align-items: baseline;
+	.typewriter {
+		min-width: 200px;
 	}
 </style>
