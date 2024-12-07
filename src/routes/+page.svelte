@@ -46,7 +46,7 @@
 
 		<div class="wrapper space-y-20 lg:space-y-10 mt-44">
         	<div class="text-3xl text-white">Want to find the best talent? Contact us:</div>
-        	<div class="text-2xl">hire@comingsoon.com</div>
+        	<div class="text-2xl">hire@terminaljobs.com</div>
 		</div>
     </div>
 </div>
