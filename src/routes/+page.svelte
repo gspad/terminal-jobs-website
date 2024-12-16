@@ -16,9 +16,9 @@
 	onMount(typeWriter);
   </script>
   
-  <div class="flex min-h-screen items-center justify-center p-4 bg-black">
-	<div class="space-y-12 md:space-y-16 text-center max-w-3xl w-full px-4">
-	  <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold text-white leading-tight">
+  <div class="flex min-h-screen items-start justify-center bg-black pt-20 md:pt-32">
+	<div class="space-y-28 md:space-y-40 text-center w-full px-4 md:px-0">
+	  <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold text-white">
 		opportunities for top engineers.
 	  </h1>
 	  
