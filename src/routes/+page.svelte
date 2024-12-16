@@ -22,9 +22,11 @@
 		opportunities for top engineers.
 	  </h1>
 	  
-	  <div class="font-mono text-lg md:text-xl text-gray-300 overflow-x-auto whitespace-nowrap py-2">
-		<span>{displayedCommand}</span>
-		<span class="caret">|</span>
+	  <div class="font-mono text-lg md:text-xl text-gray-300">
+		<div class="break-words md:whitespace-nowrap md:overflow-x-auto py-2 inline-block text-left">
+		  <span>{displayedCommand}</span>
+		  <span class="caret">|</span>
+		</div>
 	  </div>
 	  
 	  <div class="space-y-3 md:space-y-4">
